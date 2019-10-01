@@ -65,7 +65,7 @@ calc_disk() {
 speed_test_v4() {
     local servertarget=$(printf $1 | sed -r 's/.{1}//' | sed -r 's/.{1}$//')
     local servername=$(echo ${line#$1} | sed -r 's/.{1}//' | sed -r 's/.{1}$//')
-    local output=$(LANG=C wget -4O /dev/null -T300 $servertarget 2>&1)
+    local output=$(LANG=C wget -4O /dev/null -T300 $servertarget --no-check-certificate 2>&1)
     local speedtest=$(printf '%s' "$output" | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}')
     local cekspeed=$(printf '%s' "$output" | awk '/\/dev\/null/ {speed=$4} END {gsub(/\(|\)/,"",speed); print speed}')
     local ipaddress=$(printf '%s' "$output" | awk -F'|' '/Connecting to .*\|([^\|]+)\|/ {print $2}')
@@ -324,8 +324,8 @@ while IFS= read -r line
 do
   satu=$(echo "$line" | grep "$keywordserver")
 
-echo $satu >> target-server.txt
-sed -i '/^$/d' target-server.txt
+echo $satu >> $list2
+sed -i '/^$/d' $list2
 
 done < "$list_server"
 
