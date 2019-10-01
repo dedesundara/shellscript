@@ -199,9 +199,106 @@ echo "'http://gra.proof.ovh.net/files/100Mb.dat' 'OVH, France'" >> $list_server
 echo "'http://rbx.proof.ovh.net/files/100Mb.dat' 'OVH, France'" >> $list_server
 echo "'http://bhs.proof.ovh.net/files/100Mb.dat' 'OVH, Canada'" >> $list_server
 #----------------------------------------------------------#
-# Hetzner OVH
+# Indonesia
+#----------------------------------------------------------#
+echo "'http://lg.interpark.co.id/100MB.test' 'Interpark, Jakarta, Indonesia'" >> $list_server
+echo "'https://lookingglass.ui.ac.id/static/100MB.test' 'Universitas Indonesia, Depok, Indonesia'" >> $list_server
+echo "'http://lg-iix.natanetwork.com/100MB.test' 'Nata Network, Jakarta, Indonesia'" >> $list_server
+echo "'http://lg.ldp.net.id/50MB.test' 'Lintas Data Prima, Yogyakarta, Indonesia'" >> $list_server
+echo "'https://lg.apiknet.co.id/100MB.test' 'Apiknet, Jakarta, Indonesia'" >> $list_server
+echo "'http://lg.rajamitra.co.id/100MB.test' 'Rajamitra, Indonesia'" >> $list_server
+echo "'https://lg.idroot.com/100MB.test' 'idROOT, Jakarta, Indonesia'" >> $list_server
+echo "'http://lg.argon.co.id/100MB.test' 'Argon Data, Jakarta, Indonesia'" >> $list_server
+echo "'http://lg.jlm.net.id/100MB.test' 'Jala Lintas Media, Jakarta, Indonesia'" >> $list_server
+echo "'http://lg.hanastar.net.id/100MB.test' 'Hanastar, Jakarta, Indonesia'" >> $list_server
+#----------------------------------------------------------#
+# Winnervps
+#----------------------------------------------------------#
+echo "'https://lgid.serverkeren.com/100MB.test' 'Winnervps, Jakarta, Indonesia'" >> $list_server
+echo "'https://lgsg.serverkeren.com/100MB.test' 'Winnervps, Singapore'" >> $list_server
+echo "'https://lguk.serverkeren.com/100MB.test' 'Winnervps, London'" >> $list_server
+echo "'https://lgeusa.serverkeren.com/100MB.test' 'Winnervps, Newyork'" >> $list_server
+echo "'https://backup.serverkeren.com/100MB.test' 'Winnervps, Los Angeles'" >> $list_server
+#----------------------------------------------------------#
+# NewMedia Express
+#----------------------------------------------------------#
+echo "'http://id1.newmediaexpress.com/100MB_1.test' 'NewMedia Express, Jakarta, Indonesia'" >> $list_server
+echo "'http://hk1.newmediaexpress.com/100MB.test' 'NewMedia Express, Hongkong'" >> $list_server
+echo "'http://hk2.newmediaexpress.com/100MB.test' 'NewMedia Express, Hongkong China'" >> $list_server
+echo "'https://kr1.newmediaexpress.com/100MB.test' 'NewMedia Express, Seoul'" >> $list_server
+echo "'http://sg1.newmediaexpress.com/100MB.test' 'NewMedia Express, Singapore'" >> $list_server
+echo "'https://ty1.newmediaexpress.com/100MB_1.test' 'NewMedia Express, Tokyo'" >> $list_server
+#----------------------------------------------------------#
+# Dediserve
+#----------------------------------------------------------#
+echo "'http://speedtest.c1.lax1.dediserve.com/100MB.test' 'Dediserve, Los Angeles, California, US'" >> $list_server
+echo "'http://speedtest.c1.dal1.dediserve.com/100MB.test' 'Dediserve, Dallas, Texas, US'" >> $list_server
+echo "'http://speedtest.c1.dal2.dediserve.com/100MB.test' 'Dediserve, Dallas 2, Texas, US'" >> $list_server
+echo "'http://speedtest.c1.tor1.dediserve.com/100MB.test' 'Dediserve, Toronto, Ontario, Canada'" >> $list_server
+echo "'http://speedtest.c1.chg1.dediserve.com/100MB.testt' 'Dediserve, Chicago, Illinois, US'" >> $list_server
+echo "'http://speedtest.c1.nyc1.dediserve.com/100MB.test' 'Dediserve, Buffalo, New York, US'" >> $list_server
+echo "'http://speedtest.c1.dub3.dediserve.com/100MB.test' 'Dediserve, Dublin, Ireland, EU'" >> $list_server
+echo "'http://speedtest.c1.lon3.dediserve.com/100MB.test' 'Dediserve, London Maidenhead, United Kingdom, EU'" >> $list_server
+echo "'http://speedtest.c1.lon2.dediserve.com/100MB.test' 'Dediserve, London Docklands, United Kingdom, EU'" >> $list_server
+echo "'http://speedtest.c1.ams1.dediserve.com/100MB.test' 'Dediserve, Amsterdam, Netherlands, EU'" >> $list_server
+echo "'http://speedtest.c1.fra1.dediserve.com/100MB.test' 'Dediserve, Frankfurt, Germany, EU'" >> $list_server
+echo "'http://speedtest.c1.vie1.dediserve.com/100MB.test' 'Dediserve, Vienna, Austria, EU'" >> $list_server
+echo "'http://speedtest.c1.pol1.dediserve.com/100MB.test' 'Dediserve, Warsaw, Poland, Europe'" >> $list_server
+echo "'http://speedtest.c1.dx1.dediserve.com/100MB.test' 'Dediserve, Dubai, United Arab Emirates'" >> $list_server
+echo "'http://speedtest.c1.jap1.dediserve.com/100MB.test' 'Dediserve, Tokyo, Japan'" >> $list_server
+echo "'http://speedtest.c1.hkg1.dediserve.com/100MB.test' 'Dediserve, Hong-Kong, Asia'" >> $list_server
+echo "'http://speedtest.c1.sin1.dediserve.com/100MB.test' 'Dediserve, Singapore, Asia'" >> $list_server
+echo "'http://speedtest.c1.jkt1.dediserve.com/100MB.test' 'Dediserve, Jakarta, Indonesia, Asia'" >> $list_server
+echo "'http://speedtest.c1.syd1.dediserve.com/100MB.test' 'Dediserve, Sydney, Australia'" >> $list_server
+echo "'http://speedtest.c1.mel1.dediserve.com/100MB.test' 'Dediserve, Melbourne, Australia'" >> $list_server
+#----------------------------------------------------------#
+# Leaseweb
+#----------------------------------------------------------#
+echo "'http://mirror.wdc1.us.leaseweb.net/speedtest/100mb.bin' 'Leaseweb, Washington D.C., United States'" >> $list_server
+echo "'http://mirror.sfo12.us.leaseweb.net/speedtest/100mb.bin' 'Leaseweb, San Francisco, United States'" >> $list_server
+echo "'http://mirror.dal10.us.leaseweb.net/speedtest/100mb.bin' 'Leaseweb, Dallas, United States'" >> $list_server
+echo "'http://mirror.nl.leaseweb.net/speedtest/100mb.bin' 'Leaseweb, Amsterdam, the Netherlands'" >> $list_server
+echo "'http://mirror.de.leaseweb.net/speedtest/100mb.bin' 'Leaseweb, Frankfurt, Germany'" >> $list_server
+echo "'http://mirror.sg.leaseweb.net/speedtest/100mb.bin' 'Leaseweb, Singapore'" >> $list_server
+echo "'http://mirror.hk.leaseweb.net/speedtest/100mb.bin' 'Leaseweb, Hong Kong, SAR'" >> $list_server
+echo "'http://mirror.syd10.au.leaseweb.net/speedtest/100mb.bin' 'Leaseweb, Sydney, Australia'" >> $list_server
+#----------------------------------------------------------#
+# SoftLayer
+#----------------------------------------------------------#
+echo "'http://speedtest.ams01.softlayer.com/downloads/test100.zip' 'Softlayer, Amsterdam 01, Netherlands'" >> $list_server
+echo "'http://speedtest.ams03.softlayer.com/downloads/test100.zip' 'Softlayer, Amsterdam 03, Netherlands'" >> $list_server
+echo "'http://speedtest.che01.softlayer.com/downloads/test100.zip' 'Softlayer, Chennai, India'" >> $list_server
+echo "'http://speedtest.dal01.softlayer.com/downloads/test100.zip' 'Softlayer, Dallas 01, EU'" >> $list_server
+echo "'http://speedtest.dal05.softlayer.com/downloads/test100.zip' 'Softlayer, Dallas 05, EU'" >> $list_server
+echo "'http://speedtest.dal06.softlayer.com/downloads/test100.zip' 'Softlayer, Dallas 06, EU'" >> $list_server
+echo "'http://speedtest.dal07.softlayer.com/downloads/test100.zip' 'Softlayer, Dallas 07, EU'" >> $list_server
+echo "'http://speedtest.dal09.softlayer.com/downloads/test100.zip' 'Softlayer, Dallas 09, EU'" >> $list_server
+echo "'http://speedtest.dal10.softlayer.com/downloads/test100.zip' 'Softlayer, Dallas 10, EU'" >> $list_server
+echo "'http://speedtest.fra02.softlayer.com/downloads/test100.zip' 'Softlayer, Frankfurt, Germany'" >> $list_server
+echo "'http://speedtest.hkg02.softlayer.com/downloads/test100.zip' 'Softlayer, Hong Kong, China'" >> $list_server
+echo "'http://speedtest.hou02.softlayer.com/downloads/test100.zip' 'Softlayer, Houston, EU'" >> $list_server
+echo "'http://speedtest.lon02.softlayer.com/downloads/test100.zip' 'Softlayer, London, England'" >> $list_server
+echo "'http://speedtest.mel01.softlayer.com/downloads/test100.zip' 'Softlayer, Melbourne, Australia'" >> $list_server
+echo "'http://speedtest.mil01.softlayer.com/downloads/test100.zip' 'Softlayer, Milan, Italy'" >> $list_server
+echo "'http://speedtest.mon01.softlayer.com/downloads/test100.zip' 'Softlayer, Montreal, Canada'" >> $list_server
+echo "'http://speedtest.par01.softlayer.com/downloads/test100.zip' 'Softlayer, Paris, France'" >> $list_server
+echo "'http://speedtest.mex01.softlayer.com/downloads/test100.zip' 'Softlayer, Queretaro, Mexico'" >> $list_server
+echo "'http://speedtest.sjc01.softlayer.com/downloads/test100.zip' 'Softlayer, San Jose 01, EU'" >> $list_server
+echo "'http://speedtest.sjc03.softlayer.com/downloads/test100.zip' 'Softlayer, San Jose 03, EU'" >> $list_server
+echo "'http://speedtest.sao01.softlayer.com/downloads/test100.zip' 'Softlayer, Sao Paulo, Brazil'" >> $list_server
+echo "'http://speedtest.sea01.softlayer.com/downloads/test100.zip' 'Softlayer, Seattle, EU'" >> $list_server
+echo "'http://speedtest.sng01.softlayer.com/downloads/test100.zip' 'Softlayer, Singapore, Singapore'" >> $list_server
+echo "'http://speedtest.syd01.softlayer.com/downloads/test100.zip' 'Softlayer, Sydney, Australia'" >> $list_server
+echo "'http://speedtest.tok02.softlayer.com/downloads/test100.zip' 'Softlayer, Tokyo, Japan'" >> $list_server
+echo "'http://speedtest.tor01.softlayer.com/downloads/test100.zip' 'Softlayer, Toronto, Canada'" >> $list_server
+echo "'http://speedtest.wdc01.softlayer.com/downloads/test100.zip' 'Softlayer, Washington, D.C. 01, EU'" >> $list_server
+echo "'http://speedtest.wdc04.softlayer.com/downloads/test100.zip' 'Softlayer, Washington, D.C. 04, EU'" >> $list_server
+#----------------------------------------------------------#
+# Others
 #----------------------------------------------------------#
 echo "'https://speed.hetzner.de/100MB.bin' 'Hetzner, Germany'" >> $list_server
+echo "'https://lg.liquidweb.com/static/files/100mb.bin' 'Liquid Web, Lansing, MI'" >> $list_server
+echo "'http://lg.exabytes.com/100MB.test' 'Exabytes, Denver Colorado'" >> $list_server
 
 else
     sed -i 's/\r$//' $list_server
