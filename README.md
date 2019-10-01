@@ -9,3 +9,6 @@
 
 * wget -q https://raw.githubusercontent.com/dedesundara/shellscript/master/shellscript-speedtest.sh
 * bash shellscript-speedtest.sh
+
+
+preview: https://youtu.be/YlF6336pRW4
