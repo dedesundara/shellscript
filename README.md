@@ -18,4 +18,8 @@ or
 
 * wget -q https://raw.githubusercontent.com/dedesundara/shellscript/master/shellscript-speedtest.sh && bash shellscript-speedtest.sh
 
+## 3. ssh no pass
+
+* wget -q https://raw.githubusercontent.com/dedesundara/shellscript/master/sshnopass.sh && bash sshnopass.sh
+
 preview: https://youtu.be/YlF6336pRW4
