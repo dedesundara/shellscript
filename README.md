@@ -19,6 +19,7 @@ or
 * wget -q https://raw.githubusercontent.com/dedesundara/shellscript/master/shellscript-speedtest.sh && bash shellscript-speedtest.sh
 
 ## 3. ssh no pass
+* curl https://raw.githubusercontent.com/dedesundara/shellscript/master/sshnopass.sh -o ~/.ssh/sshnopass.sh
 
 * wget -q https://raw.githubusercontent.com/dedesundara/shellscript/master/sshnopass.sh && bash sshnopass.sh
 
