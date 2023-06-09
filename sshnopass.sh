@@ -45,10 +45,15 @@ fi
 
 removeknownhost(){
   printf "${GREEN}%-14s${YELLOW}\n" "#----------------------------------------------------------#"
+  printf "Remove Known Host SSH\n"
+  printf "${GREEN}%-14s${PLAIN}\n" "#----------------------------------------------------------#"
+
+  printf "${GREEN}%-14s${YELLOW}\n" "#----------------------------------------------------------#"
   read -p "Enter host: " host
   printf "${GREEN}%-14s${PLAIN}\n" "#----------------------------------------------------------#"
 
   cat $knownfile | grep -in "$host" | awk -F" " '{print $1}' | while IFS= read listknownhost;
+  # cat $knownfile | grep -in "$host" | while IFS= read listknownhost;
   do
   if [ ! -z "$listknownhost" ]
   then
@@ -73,9 +78,52 @@ removeknownhost(){
   exit
 }
 
-if [ "$1" == "2" ]; then
-removeknownhost
-fi
+removeconfig(){
+  printf "${GREEN}%-14s${YELLOW}\n" "#----------------------------------------------------------#"
+  printf "Remove Config SSH\n"
+  printf "${GREEN}%-14s${PLAIN}\n" "#----------------------------------------------------------#"
+
+  printf "${GREEN}%-14s${YELLOW}\n" "#----------------------------------------------------------#"
+  read -p "Enter hostname: " targethostname
+  printf "${GREEN}%-14s${PLAIN}\n" "#----------------------------------------------------------#"
+
+  if [ -f $dirssh/id_rsa_$targethostname ]; then 
+    printf "${RED}File exist & removed ${BLUE}$dirssh/id_rsa_$targethostname ${PLAIN}\n"
+
+    if [ -f $dirssh/id_rsa_$targethostname ]; then 
+    rm "$dirssh/id_rsa_$targethostname"
+    fi
+    if [ -f $dirssh/id_rsa_$targethostname.pub ]; then 
+        rm "$dirssh/id_rsa_$targethostname.pub"
+    fi
+    else
+    printf "${RED}File not exist ${BLUE}$dirssh/id_rsa_$targethostname ${PLAIN}\n"
+  fi
+
+  arrayrm=()
+  for rmconfig in $(cat -n $configfile | grep -A 5 "####### ${targethostname} #######" | awk -F" " '{print $1}')
+  do
+    arrayrm+=($rmconfig)
+  done
+
+  if [ ! -z "$rmconfig" ]
+  then
+  printf "${RED}%-14s${YELLOW}\n" "#----------------------------------------------------------#"
+  printf "${GREEN}Removed config ${BLUE}$targethostname ${PLAIN}\n"
+  printf "${RED}%-14s${YELLOW}\n" "#----------------------------------------------------------#"
+
+  if [[ "$OSTYPE" == "darwin"* ]]; then
+    sed -i '' -e "${arrayrm[0]},${arrayrm[5]}d" $configfile
+  else
+    sed -i -e "${arrayrm[0]},${arrayrm[5]}d" $configfile
+  fi
+
+  fi
+
+  space
+  exit
+}
+
 
 enterdata() {
   printf "${GREEN}%-14s${YELLOW}\n" "#----------------------------------------------------------#"
@@ -145,10 +193,14 @@ createkeygen() {
   printf "${GREEN}%-14s${YELLOW}\n" "#----------------------------------------------------------#"
   ssh-keygen -t rsa -N '' -f $dirssh/id_rsa_$name <<< y
   printf "${GREEN}%-14s${YELLOW}\n" "#----------------------------------------------------------#"
-  echo "ssh-copy-id -i $dirssh/id_rsa_$name.pub $user@$host -p $port"
+#   echo "ssh-copy-id -i $dirssh/id_rsa_$name.pub $user@$host -p $port"
+  echo "ssh-copy-id -p $port -i $dirssh/id_rsa_$name.pub $user@$host"
+
   printf "${GREEN}%-14s${PLAIN}\n" "#----------------------------------------------------------#"
 
-  ssh-copy-id -i $dirssh/id_rsa_$name.pub $user@$host -p $port
+#   ssh-copy-id -i $dirssh/id_rsa_$name.pub $user@$host -p $port
+  ssh-copy-id -p $port -i $dirssh/id_rsa_$name.pub $user@$host 
+
 
   printf "${GREEN}%-14s${PLAIN}\n" "#----------------------------------------------------------#"
   space
@@ -170,9 +222,15 @@ readyconnect(){
   printf "${GREEN}%-14s${PLAIN}\n" "#----------------------------------------------------------#"
 }
 
+if [ "$1" == "rmknownhost" ]; then
+removeknownhost
+fi
+
+if [ "$1" == "rmconfig" ]; then
+removeconfig
+fi
+
 enterdata
 createkeygen
 createconfig
 readyconnect
-
-
